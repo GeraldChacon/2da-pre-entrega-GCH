@@ -1,10 +1,43 @@
 .main {
-    background-image: url(../images/fondo-huellas.png)
+    background-image: url(../images/fondo-huellas.png);
 
-    .o-exclusivas .p-destacados {
-        padding: 1rem;
-        text-align: center;
-    }
+    .titulo {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0 20px;
+      }
+      
+      .o-exclusivas {
+        display: flex;
+        margin: 20px;
+        width: 280px;
+        place-content: center;
+        border-radius: 80px;
+        transition: 0.75s;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.2);
+          background-color: #1FC1E5;
+          color: white;
+        }
+      }
+      
+      .p-destacados {
+        display: flex;
+        margin: 20px;
+        width: 340px;
+        place-content: center;
+        border-radius: 80px;
+        transition: 0.75s;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.2);
+          background-color: #1FC1E5;
+          color: white;
+        }
+      }
 
     .card img {
         border-radius: 2%;
