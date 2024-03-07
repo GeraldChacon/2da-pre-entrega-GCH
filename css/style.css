@@ -7,6 +7,7 @@
 
 .cabecera {
   background-color: #1FC1E5;
+  height: 70px;
 }
 
 .collapse {
@@ -19,12 +20,43 @@
   border-radius: 100%;
 }
 
+.banner {
+  height: 48px;
+  background-color: #5C5863;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.banner-info p {
+  color: white;
+  margin: 0;
+}
+.banner-gato img {
+  width: 100%;
+
+}
+
+
+.c-item {
+  height: 480px;
+}
+
+.c-img {
+  height: 480px;
+}
+
 .titulo {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
   margin: 15px 0 20px;
+}
+.servicio-tipo{
+  font-weight: bold;
+
 }
 
 .o-exclusivas {
@@ -59,11 +91,10 @@
   }
 }
 
-
-
 footer {
   background-color: #1FC1E5;
   height: 80px;
+
 }
 
 .pie-pagina {
@@ -119,10 +150,8 @@ footer {
 
 .main {
   background-image: url(../images/fondo-huellas.png);
+
 }
-
-
-
 
 .card img {
   border-radius: 2%;
@@ -146,7 +175,7 @@ footer {
 
 .opciones {
   color: white;
-  margin-top: 1rem;
+  margin-top: 3rem;
   gap: 1px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
@@ -156,7 +185,7 @@ footer {
 
 .box {
   height: 60px;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -167,6 +196,73 @@ footer {
 
 .box p {
   margin-bottom: 0;
+}
+
+.marcas {  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  gap: 3px;
+  grid-template-areas: 
+  'b1 b2 b3'
+  'b4 b5 b6';
+}
+
+.box-marcas{
+  width: 100%;
+  height: 300px;
+  display: flex;  
+
+}
+
+.box-marcas img{
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+.b1 {
+  grid-area: b1;
+}
+
+.b2 {
+  grid-area: b2;
+}
+
+.b3 {
+  grid-area: b3;
+}
+
+.b4 {
+  grid-area: b4;
+}
+
+.b5 {
+  grid-area: b5;
+}
+
+.b6 {
+  grid-area: b6;
+}
+.m-destacadas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: rgb(9, 124, 124);
+  color: aliceblue;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .banner {
+    display:flex;
+    flex-direction: column;
+    height: 70px;
+
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -192,6 +288,18 @@ footer {
   .opciones .box {
     height: 40px;
   }
+}
+
+@media (max-width: 768px) {
+  .marcas {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 300px);
+  grid-template-areas: 
+  'b1 b2'
+  'b3 b4'
+  'b5 b6';
+  }
+
 }
 
 
