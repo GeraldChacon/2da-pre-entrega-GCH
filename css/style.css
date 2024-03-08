@@ -26,18 +26,16 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 
 .banner-info p {
   color: white;
   margin: 0;
 }
+
 .banner-gato img {
   width: 100%;
-
 }
-
 
 .c-item {
   height: 480px;
@@ -54,12 +52,14 @@
   justify-content: center;
   margin: 15px 0 20px;
 }
+
 .servicio-tipo{
   font-weight: bold;
-
+  color: #003666;
 }
 
 .o-exclusivas {
+  color: #003666;
   display: flex;
   margin: 20px;
   width: 280px;
@@ -76,6 +76,7 @@
 }
 
 .p-destacados {
+  color: #003666;
   display: flex;
   margin: 20px;
   width: 340px;
@@ -91,10 +92,49 @@
   }
 }
 
+.sub-titulo-peluqueria{
+  height: 150px;
+  width: 100%;
+  color: #003666;
+  text-align: center;
+  font-size: 20px;
+}
+
+.button-servicios{
+  background-color: #050094;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid black;
+  line-height: normal;
+  height: 40px;
+  width: 140px;
+  font-size: 16px;
+
+}
+
+.accesorios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: #097c7c;
+  color: aliceblue;
+  margin: 0;
+}
+.titulo-perro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: #097c7c;
+  color: aliceblue;
+  margin: 0;
+
+}
+
 footer {
   background-color: #1FC1E5;
   height: 80px;
-
 }
 
 .pie-pagina {
@@ -158,7 +198,6 @@ footer {
   width: 100%;
   height: 280px;
   padding: 15px;
-
 }
 
 .card-button {
@@ -212,14 +251,11 @@ footer {
   width: 100%;
   height: 300px;
   display: flex;  
-
 }
 
 .box-marcas img{
   width: 100%;
   height: 100%;
-  
-  
 }
 
 .b1 {
@@ -245,12 +281,13 @@ footer {
 .b6 {
   grid-area: b6;
 }
+
 .m-destacadas{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100px;
-  background-color: rgb(9, 124, 124);
+  background-color: #097c7c;
   color: aliceblue;
   margin: 0;
 }
@@ -260,20 +297,39 @@ footer {
     display:flex;
     flex-direction: column;
     height: 70px;
-
   }
 
-}
+  .sub-titulo-peluqueria p{
+    font-size: 10px;
+  }
 
-@media (max-width: 576px) {
   .pie-pagina {
     font-size: 10px;
   }
+
+  .button-servicios{
+    border: 1px solid black;
+    height: 30px;
+    width: 100px;
+    font-size: 10px;
+  }
+
+
 
 }
 
 @media (max-width:768px) {
   .pie-pagina {
+    font-size: 10px;
+  }
+  .sub-titulo-peluqueria{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .button-servicios{
+    border: 2px solid black;
+    height: 30px;
+    width: 100px;
     font-size: 10px;
   }
 }
@@ -302,5 +358,13 @@ footer {
 
 }
 
+@media (max-width: 992px) {
+  
+  .sub-titulo-peluqueria{
+    font-size: 16px;
+    font-weight: bold;
+
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
